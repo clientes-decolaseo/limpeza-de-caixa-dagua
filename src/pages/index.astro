@@ -1,17 +1,453 @@
 ---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import FaqSection from '../components/FaqSection.astro';
+import PhoneRegions from '../components/PhoneRegions.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import heroImage from '../assets/images/home/mascote-tecnico.png';
+import imagePorQue from '../assets/images/home/por-que-importante.jpg';
+import imageSeguranca from '../assets/images/home/servico-seguranca-nr.jpg';
+import tiposCaixa from '../content/home/caixa-dagua-tipos.json';
 
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const title = "Limpeza de Caixa d'Água em São Paulo | Universo Ambiental";
+const description =
+	"Limpeza e higienização de caixa d'água em São Paulo e região. Residencial, comercial e industrial, com certificado sanitário. Orçamento grátis.";
+
+if ([...description].length > 160) {
+	throw new Error(`Meta description com ${[...description].length} caracteres (máximo 160).`);
+}
+
+const regions = await getCollection('regions');
+const saoPaulo = regions.find((region) => region.id === 'sao-paulo');
+const whatsappHref = saoPaulo
+	? `https://wa.me/${saoPaulo.data.whatsapp.replace('+', '')}`
+	: '#';
+const phoneHref = saoPaulo ? `tel:${saoPaulo.data.phone}` : '#';
+
+const faqs = (await getCollection('faqs')).filter((faq) =>
+	faq.data.appliesTo.includes('limpeza-de-caixa-dagua'),
+);
+
+const faqPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faqs.map((faq) => ({
+		'@type': 'Question',
+		name: faq.data.question,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: faq.data.answer,
+		},
+	})),
+};
+
+const ogImage = new URL('/og-images/home.jpg', site).href;
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+const benefits = [
+	'Reduz o acúmulo de lodo, insetos e resíduos no fundo e nas paredes do reservatório',
+	'Diminui o risco de a água da casa circular com contaminantes',
+	'Ajuda a manter a qualidade da água entre uma higienização e outra',
+	'Gera certificado de higienização, documento pedido em condomínios e empresas',
+	'Respeita a periodicidade recomendada de seis em seis meses',
+];
+
+const tiposEsquerda = tiposCaixa.items.filter((item) => item.column === 'left');
+const tiposDireita = tiposCaixa.items.filter((item) => item.column === 'right');
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+	title={title}
+	description={description}
+	canonical={new URL('/', site).href}
+	ogImage={ogImage}
+>
+	<script slot="head" type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />
+
+	<section class="hero" aria-labelledby="hero-heading">
+		<div class="hero-copy">
+			<h1 id="hero-heading">Limpeza de Caixa d'Água e Higienização de Reservatórios</h1>
+			<p>
+				A Universo Ambiental atende residências, condomínios e indústrias em São Paulo e região com
+				higienização segura, produtos adequados para água potável e certificado ao final do serviço.
+				O agendamento é simples e o orçamento, sem compromisso.
+			</p>
+			<div class="hero-actions">
+				<a
+					class="btn btn-whatsapp"
+					href={whatsappHref}
+					rel="noopener"
+					target="_blank"
+					aria-label={`Falar no WhatsApp ${saoPaulo?.data.whatsappDisplay ?? ''} (abre em nova aba)`}
+				>
+					WhatsApp
+				</a>
+				<a
+					class="btn btn-phone"
+					href={phoneHref}
+					aria-label={`Ligar agora para ${saoPaulo?.data.phoneDisplay ?? ''}`}
+				>
+					Ligar agora
+				</a>
+			</div>
+		</div>
+		<div class="hero-showcase">
+			<div class="tipos-col">
+				{
+					tiposEsquerda.map((item) => (
+						<article class:list={['tipo', `tone-${item.tone}`]}>
+							<h2>{item.title}</h2>
+							<p>{item.description}</p>
+						</article>
+					))
+				}
+			</div>
+			<div class="hero-media">
+				<Image
+					src={heroImage}
+					alt="Ilustração de técnico de limpeza com esponja e luvas ao lado de uma caixa d'água e um balde de espuma"
+					width={500}
+					height={785}
+					format="webp"
+					quality="mid"
+					loading="eager"
+					fetchpriority="high"
+					sizes="(min-width: 64rem) 22rem, 70vw"
+				/>
+			</div>
+			<div class="tipos-col">
+				{
+					tiposDireita.map((item) => (
+						<article class:list={['tipo', `tone-${item.tone}`]}>
+							<h2>{item.title}</h2>
+							<p>{item.description}</p>
+						</article>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section class="section" aria-labelledby="servicos-heading">
+		<div class="container">
+			<h2 id="servicos-heading">Nossos Serviços de Limpeza e Higienização</h2>
+			<ul class="service-grid">
+				{
+					services.map((service) => (
+						<li>
+							<ServiceCard
+								image={service.data.heroImage}
+								alt={service.data.heroImageAlt}
+								title={service.data.title}
+								description={service.data.shortDescription}
+								href={`/servicos/${service.data.slug}`}
+								headingLevel="h3"
+							/>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+
+	<section class="section section-alt" aria-labelledby="importancia-heading">
+		<div class="container split">
+			<div>
+				<h2 id="importancia-heading">Por Que a Higienização da Caixa d'Água é Importante?</h2>
+				<p>
+					Com o tempo, o reservatório acumula sujeira, lodo e micro-organismos. Essa camada favorece
+					a contaminação da água usada para beber, cozinhar e higiene pessoal. A Organização Mundial
+					da Saúde recomenda higienizar a caixa d'água a cada seis meses para reduzir esse risco.
+				</p>
+				<ul class="benefits">
+					{benefits.map((item) => <li>{item}</li>)}
+				</ul>
+			</div>
+			<div class="media">
+				<Image
+					src={imagePorQue}
+					alt="Água potável sendo servida em um copo de vidro transparente"
+					width={800}
+					height={Math.round((800 / imagePorQue.width) * imagePorQue.height)}
+					format="webp"
+					quality="mid"
+					loading="lazy"
+					sizes="(min-width: 64rem) 40vw, 100vw"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" aria-labelledby="seguranca-heading">
+		<div class="container split">
+			<div class="media">
+				<Image
+					src={imageSeguranca}
+					alt="Dois trabalhadores com capacete e uniforme de segurança em um canteiro de obras"
+					width={800}
+					height={Math.round((800 / imageSeguranca.width) * imageSeguranca.height)}
+					format="webp"
+					quality="mid"
+					loading="lazy"
+					sizes="(min-width: 64rem) 40vw, 100vw"
+				/>
+			</div>
+			<div>
+				<h2 id="seguranca-heading">Segurança e Certificação em Todos os Serviços</h2>
+				<p>
+					A equipe segue procedimentos de segurança para trabalho em espaço confinado (NR-33) e em
+					altura (NR-35), com equipamentos adequados a cada tipo de reservatório. Ao concluir a
+					higienização, emitimos o certificado do serviço — documento usado por condomínios e
+					empresas em fiscalizações sanitárias.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-alt">
+		<div class="container">
+			<FaqSection slug="limpeza-de-caixa-dagua" />
+		</div>
+	</section>
+
+	<section class="section section-alt cta-final" aria-labelledby="cta-heading">
+		<div class="container">
+			<h2 id="cta-heading">Fale com a equipe da sua região</h2>
+			<p>
+				Escolha o WhatsApp mais próximo. Atendemos São Paulo e cidades da região com orçamento
+				gratuito.
+			</p>
+			<PhoneRegions variant="boxes" />
+		</div>
+	</section>
+</BaseLayout>
+
+<style>
+	.hero,
+	.section {
+		padding: var(--space-12) var(--space-4);
+	}
+
+	.hero {
+		display: grid;
+		gap: var(--space-8);
+		padding: var(--space-12) var(--space-4);
+		background-color: var(--color-bg);
+	}
+
+	.container {
+		max-width: 72rem;
+		margin-inline: auto;
+	}
+
+	.hero-copy,
+	.hero-showcase {
+		max-width: 80rem;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	.hero-copy {
+		max-width: 48rem;
+	}
+
+	.hero-showcase {
+		display: grid;
+		gap: var(--space-4);
+	}
+
+	.hero-media {
+		order: -1;
+	}
+
+	.tipos-col {
+		display: grid;
+		gap: var(--space-4);
+	}
+
+	.tipo {
+		padding: var(--space-4) var(--space-6);
+		border-radius: var(--radius-lg);
+		color: var(--color-bg);
+	}
+
+	.tipo.tone-bright {
+		background-color: var(--color-primary);
+	}
+
+	.tipo.tone-dark {
+		background-color: var(--color-primary-dark);
+	}
+
+	.tipo h2 {
+		margin: 0 0 var(--space-2);
+		font-size: 1.05rem;
+		line-height: 1.3;
+		color: var(--color-bg);
+	}
+
+	.tipo p {
+		margin: 0;
+		font-size: 0.95rem;
+		line-height: 1.5;
+		color: var(--color-bg);
+		max-width: none;
+	}
+
+	h1,
+	h2 {
+		margin: 0 0 var(--space-4);
+		line-height: 1.2;
+		color: var(--color-ink);
+	}
+
+	h1 {
+		font-size: clamp(1.75rem, 4vw, 2.75rem);
+	}
+
+	h2 {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+	}
+
+	.hero-copy p,
+	.section p {
+		margin: 0 0 var(--space-6);
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+		max-width: 42rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-3);
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 2.75rem;
+		padding: var(--space-3) var(--space-6);
+		border-radius: var(--radius);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.btn-whatsapp {
+		background-color: var(--color-cta);
+		color: var(--color-bg);
+		box-shadow: inset 0 0 0 1px var(--color-cta-light);
+	}
+
+	.btn-whatsapp:hover {
+		background-color: var(--color-cta-dark);
+	}
+
+	.btn-phone {
+		background-color: var(--color-call);
+		color: var(--color-bg);
+	}
+
+	.btn-phone:hover {
+		background-color: var(--color-call-dark);
+	}
+
+	.hero-media :global(img) {
+		display: block;
+		width: 100%;
+		max-width: 22rem;
+		height: auto;
+		margin-inline: auto;
+		object-fit: contain;
+	}
+
+	.media :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: var(--radius-lg);
+		object-fit: cover;
+	}
+
+	.section-alt {
+		background-color: var(--color-bg-alt);
+	}
+
+	.service-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.split {
+		display: grid;
+		gap: var(--space-8);
+		align-items: center;
+	}
+
+	.benefits {
+		margin: 0;
+		padding-left: 1.25rem;
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+	}
+
+	.benefits li + li {
+		margin-top: var(--space-2);
+	}
+
+	.cta-final .container {
+		max-width: 80rem;
+	}
+
+	.cta-final p {
+		margin-bottom: var(--space-8);
+	}
+
+	@media (min-width: 40rem) {
+		.service-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 64rem) {
+		.hero {
+			gap: var(--space-12);
+			padding: var(--space-16) var(--space-8);
+		}
+
+		.hero-showcase {
+			grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem) minmax(0, 1fr);
+			align-items: center;
+			gap: var(--space-6) var(--space-8);
+		}
+
+		.hero-media {
+			order: 0;
+		}
+
+		.tipos-col {
+			align-content: center;
+		}
+
+		.section {
+			padding: var(--space-16) var(--space-8);
+		}
+
+		.service-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.split {
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			gap: var(--space-12);
+		}
+	}
+</style>

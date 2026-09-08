@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../components/PostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { toBlogSlug } from '../../utils/blog';
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const canonical = new URL('/blog/', site).href;
+const title = 'Blog | Universo Ambiental';
+const description =
+	"Artigos da Universo Ambiental sobre limpeza de caixa d'água, caixa de gordura, manutenção e normas sanitárias em São Paulo.";
+
+if ([...description].length > 160) {
+	throw new Error(`Meta description com ${[...description].length} caracteres (máximo 160).`);
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: new URL('/', site).href,
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Blog',
+			item: canonical,
+		},
+	],
+};
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+	<Fragment slot="head">
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+	</Fragment>
+
+	<section class="listing" aria-labelledby="blog-heading">
+		<header class="intro">
+			<nav class="breadcrumb" aria-label="Trilha de navegação">
+				<ol>
+					<li><a href="/">Home</a></li>
+					<li aria-current="page">Blog</li>
+				</ol>
+			</nav>
+			<h1 id="blog-heading">Blog</h1>
+			<p>
+				Orientações práticas sobre higienização de reservatórios, caixa de gordura, manutenção e
+				normas sanitárias. Textos para moradores, síndicos e empresas que precisam decidir com
+				critério — sem tabela genérica nem prazo inventado.
+			</p>
+		</header>
+
+		<ul class="post-grid">
+			{
+				posts.map((post) => (
+					<li>
+						<PostCard
+							image={post.data.heroImage}
+							alt={post.data.heroImageAlt}
+							title={post.data.title}
+							excerpt={post.data.excerpt}
+							href={`/blog/${toBlogSlug(post.id)}/`}
+							pubDate={post.data.pubDate}
+							headingLevel="h2"
+						/>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</BaseLayout>
+
+<style>
+	.listing {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: var(--space-8) var(--space-4) var(--space-16);
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2);
+		margin: 0 0 var(--space-6);
+		padding: 0;
+		list-style: none;
+		color: var(--color-ink-soft);
+		font-size: 0.9rem;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: '>';
+		margin-left: var(--space-2);
+		color: var(--color-border);
+	}
+
+	.breadcrumb a {
+		color: var(--color-primary-dark);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb [aria-current='page'] {
+		color: var(--color-ink);
+		font-weight: 600;
+	}
+
+	h1 {
+		margin: 0 0 var(--space-4);
+		font-size: clamp(1.75rem, 4vw, 2.75rem);
+		line-height: 1.2;
+		color: var(--color-ink);
+	}
+
+	.intro p {
+		margin: 0 0 var(--space-12);
+		max-width: 42rem;
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+	}
+
+	.post-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	@media (min-width: 40rem) {
+		.post-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 64rem) {
+		.listing {
+			padding: var(--space-12) var(--space-8) var(--space-24);
+		}
+
+		.post-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+</style>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "frequencia-limpeza",
+    "question": "Qual a frequência certa para limpar a caixa d'água?",
+    "answer": "A recomendação da ANVISA e dos órgãos de vigilância sanitária é higienizar a caixa d'água a cada seis meses.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "obrigatorio-empresa",
+    "question": "É obrigatório contratar uma empresa especializada?",
+    "answer": "Para residências não há obrigação legal, mas condomínios, empresas, indústrias e comércios precisam comprovar a manutenção com certificado sanitário. Contratar especialistas garante um serviço seguro e eficaz.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "tempo-servico",
+    "question": "Quanto tempo demora o serviço?",
+    "answer": "Em residências, a higienização costuma levar de 1 a 3 horas. Reservatórios de grande porte podem demandar mais tempo, dependendo do volume.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "usar-agua-durante",
+    "question": "Posso usar água durante a limpeza?",
+    "answer": "Não. Durante a limpeza, o reservatório fica esvaziado e só é reabastecido após a higienização. Recomenda-se reservar água para necessidades básicas antes do serviço.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "produto-usado",
+    "question": "Qual o produto usado para a higienização?",
+    "answer": "Utilizamos produtos desinfetantes aprovados pela ANVISA e seguros para água potável, aplicados em dosagem correta e removidos após o processo de enxágue.",
+    "appliesTo": ["limpeza-de-caixa-dagua", "hidrojateamento"]
+  },
+  {
+    "id": "danifica-caixa",
+    "question": "A limpeza pode danificar minha caixa d'água?",
+    "answer": "Não. O procedimento é feito por profissionais treinados, com equipamentos adequados para evitar riscos de rachaduras ou contaminação.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "tipos-caixa",
+    "question": "Vocês limpam todos os tipos de caixas d'água?",
+    "answer": "Sim, atendemos caixas e reservatórios de diferentes capacidades, incluindo modelos de fibrocimento, plástico, inox, alvenaria, caixas elevadas e subterrâneas.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "quem-emite-certificado",
+    "question": "Quem emite o certificado de limpeza?",
+    "answer": "A Universo Ambiental fornece o certificado de higienização após o serviço, documento essencial para empresas e condomínios em fiscalizações sanitárias.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "condominios-grandes",
+    "question": "É possível limpar caixa d'água em condomínios grandes?",
+    "answer": "Sim. Temos equipe e estrutura para higienizar grandes reservatórios coletivos, como os usados em condomínios residenciais ou comerciais de grande porte.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "quanto-custa",
+    "question": "Quanto custa a limpeza de caixa d'água?",
+    "answer": "O valor varia conforme a capacidade do reservatório, o acesso ao local e a complexidade do serviço. Fazemos orçamento gratuito e sem compromisso.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "horarios-especiais",
+    "question": "É possível agendar o serviço em horários especiais?",
+    "answer": "Sim. Flexibilizamos o agendamento conforme a necessidade do cliente, inclusive para horários de menor impacto em empresas e condomínios.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "consumir-agua-apos",
+    "question": "Já posso consumir a água logo após a limpeza?",
+    "answer": "Sim. Após a limpeza e desinfecção, o reservatório é reabastecido e a água já pode ser utilizada normalmente, segura para consumo e higiene.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
+  },
+  {
+    "id": "frequencia-caixa-gordura",
+    "question": "Qual a frequência ideal para limpar a caixa de gordura?",
+    "answer": "A frequência ideal depende do volume de uso. Em cozinhas com muito preparo de alimentos a caixa enche mais rápido; em residências o intervalo costuma ser maior. Recomendamos uma avaliação técnica gratuita para indicar o ritmo adequado ao seu caso.",
+    "appliesTo": ["limpeza-de-caixa-de-gordura"]
+  },
+  {
+    "id": "limpar-caixa-gordura-sozinho",
+    "question": "Posso limpar a caixa de gordura sozinho?",
+    "answer": "Não é recomendado. Além do risco sanitário no manuseio dos resíduos, o descarte de gordura e lodo precisa seguir destinação adequada. O serviço especializado faz a sucção, o transporte e o encaminhamento correto do material.",
+    "appliesTo": ["limpeza-de-caixa-de-gordura"]
+  }
+]

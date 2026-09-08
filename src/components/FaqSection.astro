@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+	slug: string;
+	heading?: string;
+}
+
+const { slug, heading = 'Perguntas Frequentes' } = Astro.props;
+
+const faqs = (await getCollection('faqs')).filter((faq) => faq.data.appliesTo.includes(slug));
+---
+
+{
+	faqs.length > 0 && (
+		<section class="faq" aria-labelledby="faq-heading">
+			<h2 id="faq-heading">{heading}</h2>
+			{faqs.map((faq) => (
+				<details>
+					<summary>{faq.data.question}</summary>
+					<p>{faq.data.answer}</p>
+				</details>
+			))}
+		</section>
+	)
+}
+
+<style>
+	.faq {
+		max-width: 48rem;
+		margin-inline: auto;
+	}
+
+	h2 {
+		margin: 0 0 var(--space-4);
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		line-height: 1.2;
+		color: var(--color-ink);
+	}
+
+	details {
+		border-bottom: 1px solid var(--color-border);
+		padding: var(--space-4) 0;
+	}
+
+	summary {
+		cursor: pointer;
+		font-weight: 700;
+		color: var(--color-ink);
+	}
+
+	details p {
+		margin: var(--space-3) 0 0;
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+	}
+</style>

@@ -1,0 +1,431 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+import PhoneRegions from './PhoneRegions.astro';
+
+const currentPath = Astro.url.pathname;
+
+const serviceItems = [
+	{ href: '/servicos/limpeza-de-caixa-dagua', label: "Limpeza de Caixa D'Água" },
+	{ href: '/servicos/limpeza-de-calhas', label: 'Limpeza de Calhas' },
+	{ href: '/servicos/limpeza-de-coifa', label: 'Limpeza de Coifa' },
+	{ href: '/servicos/limpa-fossa', label: 'Limpa Fossa' },
+	{ href: '/servicos/hidrojateamento', label: 'Hidrojateamento' },
+	{ href: '/hidrojateamento/industrial', label: 'Hidrojateamento Industrial' },
+	{ href: '/servicos/limpeza-de-caixa-de-gordura', label: 'Limpeza de Caixa de Gordura' },
+] as const;
+
+const navItems = [
+	{ href: '/blog', label: 'Blog' },
+	{ href: '/contato', label: 'Contato' },
+] as const;
+
+function isCurrentPage(href: string) {
+	const path = currentPath.replace(/\/$/, '') || '/';
+	const normalizedHref = href.replace(/\/$/, '') || '/';
+
+	if (normalizedHref === '/') {
+		return path === '/';
+	}
+
+	if (normalizedHref === '/servicos') {
+		return path === '/servicos';
+	}
+
+	if (normalizedHref === '/servicos/hidrojateamento') {
+		return path === normalizedHref || path === '/hidrojateamento';
+	}
+
+	return path === normalizedHref || path.startsWith(`${normalizedHref}/`);
+}
+
+const pathNormalized = currentPath.replace(/\/$/, '') || '/';
+const isServicesSection =
+	pathNormalized === '/servicos' ||
+	pathNormalized.startsWith('/servicos/') ||
+	pathNormalized.startsWith('/hidrojateamento');
+---
+
+<header>
+	<div class="inner">
+		<a class="logo" href="/" aria-label="Universo Ambiental — página inicial">
+			<Image
+				src={logo}
+				alt="Universo Ambiental - Limpeza de Caixa D'Água"
+				width={344}
+				height={100}
+				format="webp"
+				quality="mid"
+				loading="eager"
+			/>
+		</a>
+
+		<input id="menu-toggle" class="menu-toggle" type="checkbox" />
+		<label class="menu-toggle-label" for="menu-toggle">
+			<span class="visually-hidden">Abrir ou fechar o menu de navegação</span>
+			<span class="hamburger" aria-hidden="true"></span>
+		</label>
+
+		<div class="panel">
+			<nav aria-label="Navegação principal">
+				<ul>
+					<li>
+						<a href="/" aria-current={isCurrentPage('/') ? 'page' : undefined}>Início</a>
+					</li>
+					<li class="has-submenu">
+						<a
+							href="/servicos"
+							aria-current={isCurrentPage('/servicos') ? 'page' : undefined}
+							class:list={['parent-link', isServicesSection && 'is-section']}
+						>
+							Serviços
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="currentColor">
+								<path d="M2.2 4.2a.75.75 0 0 1 1.06 0L6 6.94l2.74-2.74a.75.75 0 0 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L2.2 5.26a.75.75 0 0 1 0-1.06z" />
+							</svg>
+						</a>
+						<ul class="submenu submenu-flyout">
+							{
+								serviceItems.map((item) => (
+									<li>
+										<a
+											href={item.href}
+											aria-current={isCurrentPage(item.href) ? 'page' : undefined}
+										>
+											{item.label}
+										</a>
+									</li>
+								))
+							}
+						</ul>
+						<details class="submenu-disclosure" open={isServicesSection}>
+							<summary>
+								Serviços
+								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" fill="currentColor">
+									<path d="M2.2 4.2a.75.75 0 0 1 1.06 0L6 6.94l2.74-2.74a.75.75 0 0 1 1.06 1.06l-3.27 3.27a.75.75 0 0 1-1.06 0L2.2 5.26a.75.75 0 0 1 0-1.06z" />
+								</svg>
+							</summary>
+							<ul class="submenu">
+								<li>
+									<a
+										href="/servicos"
+										aria-current={isCurrentPage('/servicos') ? 'page' : undefined}
+									>
+										Todos os serviços
+									</a>
+								</li>
+								{
+									serviceItems.map((item) => (
+										<li>
+											<a
+												href={item.href}
+												aria-current={isCurrentPage(item.href) ? 'page' : undefined}
+											>
+												{item.label}
+											</a>
+										</li>
+									))
+								}
+							</ul>
+						</details>
+					</li>
+					{
+						navItems.map((item) => (
+							<li>
+								<a
+									href={item.href}
+									aria-current={isCurrentPage(item.href) ? 'page' : undefined}
+								>
+									{item.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+
+			<div class="header-phone">
+				<PhoneRegions variant="compact" />
+			</div>
+		</div>
+	</div>
+</header>
+
+<style>
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		border-bottom: 1px solid var(--color-border);
+		background-color: var(--color-bg);
+	}
+
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-3);
+		max-width: 72rem;
+		margin-inline: auto;
+		padding: var(--space-3) var(--space-4);
+	}
+
+	.logo {
+		display: inline-flex;
+		align-items: center;
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.logo :global(img) {
+		display: block;
+		width: auto;
+		height: 2rem;
+	}
+
+	.menu-toggle {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.menu-toggle-label {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.75rem;
+		height: 2.75rem;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		background-color: var(--color-bg);
+		cursor: pointer;
+	}
+
+	.menu-toggle:focus-visible + .menu-toggle-label {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 2px;
+	}
+
+	.hamburger,
+	.hamburger::before,
+	.hamburger::after {
+		display: block;
+		width: 1.25rem;
+		height: 2px;
+		background-color: var(--color-ink);
+	}
+
+	.hamburger {
+		position: relative;
+	}
+
+	.hamburger::before,
+	.hamburger::after {
+		position: absolute;
+		left: 0;
+		content: '';
+	}
+
+	.hamburger::before {
+		top: -6px;
+	}
+
+	.hamburger::after {
+		top: 6px;
+	}
+
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
+	.panel {
+		display: none;
+		flex-basis: 100%;
+		flex-direction: column;
+		gap: var(--space-4);
+		padding-top: var(--space-2);
+		padding-bottom: var(--space-2);
+	}
+
+	.menu-toggle:checked ~ .panel {
+		display: flex;
+	}
+
+	nav > ul {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	nav a {
+		display: block;
+		padding: var(--space-2) var(--space-3);
+		border-radius: var(--radius);
+		color: var(--color-ink);
+		font-size: 0.95rem;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.parent-link,
+	.submenu-flyout {
+		display: none;
+	}
+
+	.submenu-disclosure summary {
+		display: flex;
+		align-items: center;
+		gap: var(--space-1);
+		padding: var(--space-2) var(--space-3);
+		border-radius: var(--radius);
+		color: var(--color-ink);
+		font-size: 0.95rem;
+		font-weight: 600;
+		cursor: pointer;
+		list-style: none;
+	}
+
+	.submenu-disclosure summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.submenu-disclosure summary:focus-visible {
+		outline: 2px solid var(--color-primary);
+		outline-offset: 2px;
+	}
+
+	.submenu-disclosure[open] summary,
+	.submenu-disclosure summary:hover {
+		background-color: var(--color-primary-light);
+		color: var(--color-primary-dark);
+	}
+
+	.submenu-disclosure[open] summary svg {
+		transform: rotate(180deg);
+	}
+
+	.submenu {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-1);
+		margin: 0;
+		padding: 0 0 0 var(--space-4);
+		list-style: none;
+	}
+
+	nav a:hover,
+	nav a[aria-current='page'],
+	nav a.is-section {
+		background-color: var(--color-primary-light);
+		color: var(--color-primary-dark);
+	}
+
+	.header-phone {
+		display: none;
+	}
+
+	@media (min-width: 64rem) {
+		.inner {
+			flex-wrap: nowrap;
+			gap: var(--space-6);
+			padding-block: var(--space-4);
+		}
+
+		.logo {
+			flex: 0 0 auto;
+		}
+
+		.logo :global(img) {
+			height: 2.25rem;
+		}
+
+		.menu-toggle,
+		.menu-toggle-label {
+			display: none;
+		}
+
+		.panel {
+			display: flex;
+			flex-basis: auto;
+			flex: 1 1 auto;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			gap: var(--space-6);
+			padding: 0;
+		}
+
+		nav > ul {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: flex-end;
+			gap: var(--space-1);
+		}
+
+		.has-submenu {
+			position: relative;
+		}
+
+		.submenu-disclosure {
+			display: none;
+		}
+
+		.parent-link {
+			display: inline-flex;
+			align-items: center;
+			gap: var(--space-1);
+		}
+
+		.submenu-flyout {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 30;
+			display: none;
+			min-width: 17rem;
+			padding: var(--space-2);
+			border: 1px solid var(--color-border);
+			border-radius: var(--radius);
+			background-color: var(--color-bg);
+			box-shadow: 0 0.75rem 1.5rem rgb(20 35 43 / 0.12);
+		}
+
+		.has-submenu:hover > .submenu-flyout,
+		.has-submenu:focus-within > .submenu-flyout {
+			display: flex;
+		}
+
+		nav a {
+			padding: var(--space-2) var(--space-3);
+			font-size: 0.9rem;
+			white-space: nowrap;
+		}
+
+		.submenu a {
+			white-space: normal;
+		}
+
+		.header-phone {
+			display: block;
+			flex-shrink: 0;
+		}
+	}
+</style>

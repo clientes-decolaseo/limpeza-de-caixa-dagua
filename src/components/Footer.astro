@@ -1,0 +1,144 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+import PhoneRegions from './PhoneRegions.astro';
+
+const year = new Date().getFullYear();
+
+const serviceLinks = [
+	{ href: '/servicos/limpeza-de-caixa-dagua', label: "Limpeza de Caixa D'Água" },
+	{ href: '/servicos/limpeza-de-calhas', label: 'Limpeza de Calhas' },
+	{ href: '/servicos/limpeza-de-coifa', label: 'Limpeza de Coifa' },
+	{ href: '/servicos/limpa-fossa', label: 'Limpa Fossa' },
+	{ href: '/servicos/hidrojateamento', label: 'Hidrojateamento' },
+	{ href: '/servicos/limpeza-de-caixa-de-gordura', label: 'Limpeza de Caixa de Gordura' },
+	{ href: '/blog', label: 'Blog' },
+	{ href: '/contato', label: 'Contato' },
+] as const;
+---
+
+<footer>
+	<div class="inner">
+		<div class="brand">
+			<a class="logo" href="/" aria-label="Universo Ambiental — página inicial">
+				<Image
+					src={logo}
+					alt="Universo Ambiental - Limpeza de Caixa D'Água"
+					width={344}
+					height={100}
+					format="webp"
+					quality="mid"
+				/>
+			</a>
+			<p class="tagline">Higienização de caixas d'água e reservatórios em São Paulo e região.</p>
+		</div>
+
+		<section class="contacts" aria-labelledby="footer-contatos">
+			<h2 id="footer-contatos">Atendimento por região</h2>
+			<PhoneRegions variant="full" />
+		</section>
+
+		<nav aria-label="Links rápidos">
+			<h2 id="footer-links">Serviços</h2>
+			<ul>
+				{
+					serviceLinks.map((item) => (
+						<li>
+							<a href={item.href}>{item.label}</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+	</div>
+
+	<p class="copyright">© {year} Universo Ambiental. Todos os direitos reservados.</p>
+</footer>
+
+<style>
+	footer {
+		background-color: var(--color-bg-alt);
+		border-top: 1px solid var(--color-border);
+		color: var(--color-ink);
+	}
+
+	.inner {
+		display: grid;
+		gap: var(--space-12);
+		max-width: 72rem;
+		margin-inline: auto;
+		padding: var(--space-12) var(--space-4);
+	}
+
+	.logo {
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: var(--space-3);
+	}
+
+	.logo :global(img) {
+		display: block;
+		width: auto;
+		height: 2.5rem;
+	}
+
+	.tagline {
+		margin: 0;
+		max-width: 28rem;
+		color: var(--color-ink-soft);
+	}
+
+	h2 {
+		margin: 0 0 var(--space-4);
+		font-size: 1rem;
+		font-weight: 700;
+	}
+
+	nav ul {
+		display: grid;
+		gap: var(--space-2);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	nav a {
+		color: var(--color-ink-soft);
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+
+	.copyright {
+		margin: 0;
+		padding: var(--space-4);
+		border-top: 1px solid var(--color-border);
+		color: var(--color-ink-soft);
+		font-size: 0.875rem;
+		text-align: center;
+	}
+
+	@media (min-width: 48rem) {
+		.inner {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.brand {
+			grid-column: 1 / -1;
+		}
+	}
+
+	@media (min-width: 72rem) {
+		.inner {
+			grid-template-columns: 18rem 1fr 12rem;
+			align-items: start;
+		}
+
+		.brand {
+			grid-column: auto;
+		}
+	}
+</style>

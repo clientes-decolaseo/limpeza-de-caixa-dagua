@@ -1,0 +1,56 @@
+[
+  {
+    "id": "sao-paulo",
+    "name": "Região de São Paulo - SP",
+    "phone": "+551132110000",
+    "phoneDisplay": "(11) 3211-0000",
+    "whatsapp": "+5508001117272",
+    "whatsappDisplay": "0800 111 7272",
+    "citiesServed": ["São Paulo", "Zona Norte", "Zona Sul", "Zona Leste", "Zona Oeste", "Guarulhos", "Osasco", "Barueri", "Carapicuíba", "Diadema", "Mauá", "Cotia", "Embu das Artes", "Itapecerica da Serra", "Santana de Parnaíba", "Cajamar"]
+  },
+  {
+    "id": "vale-do-paraiba",
+    "name": "Vale do Paraíba e Litoral",
+    "phone": "+5512996299380",
+    "phoneDisplay": "(12) 99629-9380",
+    "whatsapp": "+5512996299380",
+    "whatsappDisplay": "(12) 99629-9380",
+    "citiesServed": ["São José dos Campos", "Taubaté", "Caraguatatuba", "Ubatuba"]
+  },
+  {
+    "id": "campinas",
+    "name": "Região de Campinas - SP",
+    "phone": "+5519997634670",
+    "phoneDisplay": "(19) 99763-4670",
+    "whatsapp": "+5519997634670",
+    "whatsappDisplay": "(19) 99763-4670",
+    "citiesServed": ["Campinas", "Valinhos", "Vinhedo", "Indaiatuba"]
+  },
+  {
+    "id": "jundiai",
+    "name": "Região de Jundiaí - SP",
+    "phone": "+5511986887029",
+    "phoneDisplay": "(11) 98688-7029",
+    "whatsapp": "+5511986887029",
+    "whatsappDisplay": "(11) 98688-7029",
+    "citiesServed": ["Jundiaí", "Várzea Paulista", "Itupeva"]
+  },
+  {
+    "id": "sorocaba",
+    "name": "Região de Sorocaba - SP",
+    "phone": "+5515981326338",
+    "phoneDisplay": "(15) 98132-6338",
+    "whatsapp": "+5515981326338",
+    "whatsappDisplay": "(15) 98132-6338",
+    "citiesServed": ["Sorocaba", "Itu", "Salto", "Votorantim"]
+  },
+  {
+    "id": "santos",
+    "name": "Região de Santos - SP",
+    "phone": "+5513982152000",
+    "phoneDisplay": "(13) 98215-2000",
+    "whatsapp": "+5513982152000",
+    "whatsappDisplay": "(13) 98215-2000",
+    "citiesServed": ["Santos", "São Vicente", "Praia Grande", "Guarujá"]
+  }
+]

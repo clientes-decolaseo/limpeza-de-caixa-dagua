@@ -1,0 +1,336 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import FaqSection from '../../components/FaqSection.astro';
+import PhoneRegions from '../../components/PhoneRegions.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const services = await getCollection('services');
+
+	return services.map((entry) => ({
+		params: { slug: entry.data.slug },
+		props: { entry },
+	}));
+}
+
+interface Props {
+	entry: CollectionEntry<'services'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const canonical = new URL(`/servicos/${entry.data.slug}`, site).href;
+const pageTitle = `${entry.data.title} em São Paulo | Universo Ambiental`;
+const hero = entry.data.heroImage;
+
+if ([...entry.data.metaDescription].length > 160) {
+	throw new Error(`Meta description de ${entry.data.slug} com ${[...entry.data.metaDescription].length} caracteres.`);
+}
+
+const faqs = (await getCollection('faqs')).filter((faq) =>
+	faq.data.appliesTo.includes(entry.data.slug),
+);
+
+const serviceSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: entry.data.title,
+	description: entry.data.metaDescription,
+	url: canonical,
+	image: new URL(hero.src, site).href,
+	provider: {
+		'@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
+		name: 'Universo Ambiental',
+		url: site.href,
+	},
+	areaServed: 'São Paulo',
+	serviceType: entry.data.title,
+};
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: new URL('/', site).href,
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Serviços',
+			item: new URL('/servicos/', site).href,
+		},
+		{
+			'@type': 'ListItem',
+			position: 3,
+			name: entry.data.title,
+			item: canonical,
+		},
+	],
+};
+
+const faqPageSchema =
+	faqs.length > 0
+		? {
+				'@context': 'https://schema.org',
+				'@type': 'FAQPage',
+				mainEntity: faqs.map((faq) => ({
+					'@type': 'Question',
+					name: faq.data.question,
+					acceptedAnswer: {
+						'@type': 'Answer',
+						text: faq.data.answer,
+					},
+				})),
+			}
+		: null;
+
+const ogImage = new URL(`/og-images/${entry.id.replace(/\.mdx$/i, '')}.jpg`, site).href;
+---
+
+<BaseLayout
+	title={pageTitle}
+	description={entry.data.metaDescription}
+	canonical={canonical}
+	ogImage={ogImage}
+>
+	<Fragment slot="head">
+		<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+		{faqPageSchema && <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />}
+	</Fragment>
+
+	<article>
+		<nav class="breadcrumb" aria-label="Trilha de navegação">
+			<ol>
+				<li><a href="/">Home</a></li>
+				<li><a href="/servicos/">Serviços</a></li>
+				<li aria-current="page">{entry.data.title}</li>
+			</ol>
+		</nav>
+
+		<header class="hero">
+			<div class="hero-copy">
+				<h1>{entry.data.title}</h1>
+				<p>{entry.data.shortDescription}</p>
+			</div>
+			<div class="hero-media">
+				<Image
+					src={hero}
+					alt={entry.data.heroImageAlt}
+					width={1200}
+					height={Math.round((1200 / hero.width) * hero.height)}
+					format="webp"
+					quality="mid"
+					loading="eager"
+					fetchpriority="high"
+					sizes="(min-width: 64rem) 50vw, 100vw"
+				/>
+			</div>
+		</header>
+
+		<div class="content">
+			<Content />
+		</div>
+
+		<div class="faq-wrap">
+			<FaqSection slug={entry.data.slug} />
+		</div>
+
+		<section class="cta" aria-labelledby="cta-heading">
+			<h2 id="cta-heading">Fale com a equipe da sua região</h2>
+			<p>Peça um orçamento gratuito pelo telefone ou WhatsApp mais próximo.</p>
+			<PhoneRegions variant="full" />
+		</section>
+	</article>
+</BaseLayout>
+
+<style>
+	article {
+		padding-bottom: var(--space-16);
+	}
+
+	.breadcrumb {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: var(--space-4);
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-2);
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		color: var(--color-ink-soft);
+		font-size: 0.9rem;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: '>';
+		margin-left: var(--space-2);
+		color: var(--color-border);
+	}
+
+	.breadcrumb a {
+		color: var(--color-primary-dark);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb [aria-current='page'] {
+		color: var(--color-ink);
+		font-weight: 600;
+	}
+
+	.hero {
+		display: grid;
+		gap: var(--space-8);
+		padding: var(--space-8) var(--space-4) var(--space-12);
+		background-color: var(--color-primary-light);
+	}
+
+	.hero-copy,
+	.hero-media {
+		max-width: 72rem;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	h1,
+	h2 {
+		margin: 0 0 var(--space-4);
+		line-height: 1.2;
+		color: var(--color-ink);
+	}
+
+	h1 {
+		font-size: clamp(1.75rem, 4vw, 2.75rem);
+	}
+
+	.hero-copy p,
+	.cta p {
+		margin: 0;
+		max-width: 42rem;
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+	}
+
+	.hero-media :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: var(--radius-lg);
+		object-fit: cover;
+	}
+
+	.content,
+	.faq-wrap,
+	.cta {
+		max-width: 48rem;
+		margin: 0 auto;
+		padding: var(--space-12) var(--space-4) 0;
+	}
+
+	.cta {
+		max-width: 72rem;
+	}
+
+	.content :global(h2) {
+		margin: var(--space-8) 0 var(--space-4);
+		font-family: var(--font-heading);
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+		line-height: 1.3;
+		color: var(--color-ink);
+	}
+
+	.content :global(h2:first-child) {
+		margin-top: 0;
+	}
+
+	.content :global(p),
+	.content :global(li) {
+		color: var(--color-ink-soft);
+		line-height: 1.7;
+	}
+
+	.content :global(p) {
+		margin: 0 0 var(--space-4);
+	}
+
+	.content :global(ul) {
+		margin: 0 0 var(--space-4);
+		padding-left: 1.25rem;
+	}
+
+	.content :global(li + li) {
+		margin-top: var(--space-2);
+	}
+
+	.content :global(.industrial-cta) {
+		margin: var(--space-8) 0 0;
+		padding: var(--space-6);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-lg);
+		background-color: var(--color-primary-light);
+	}
+
+	.content :global(.industrial-cta p) {
+		margin: 0;
+	}
+
+	.content :global(.industrial-cta a) {
+		font-weight: 700;
+		color: var(--color-primary-dark);
+	}
+
+	.cta h2 {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+	}
+
+	.cta p {
+		margin-bottom: var(--space-8);
+	}
+
+	@media (min-width: 64rem) {
+		.hero {
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			gap: var(--space-12);
+			padding: var(--space-12) var(--space-8) var(--space-16);
+			align-items: center;
+		}
+
+		.hero-copy,
+		.hero-media {
+			max-width: none;
+			margin: 0;
+		}
+
+		.hero-copy {
+			padding-left: max(0px, calc((100vw - 72rem) / 2));
+		}
+
+		.hero-media {
+			padding-right: max(0px, calc((100vw - 72rem) / 2));
+		}
+
+		.content,
+		.faq-wrap {
+			padding-top: var(--space-16);
+		}
+
+		.cta {
+			padding: var(--space-16) var(--space-8) 0;
+		}
+	}
+</style>

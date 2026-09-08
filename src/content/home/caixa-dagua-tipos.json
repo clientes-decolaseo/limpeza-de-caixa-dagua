@@ -1,0 +1,39 @@
+{
+	"items": [
+		{
+			"id": "residencial",
+			"title": "Limpeza de Caixa d'Água Residencial",
+			"description": "Proteja a saúde da sua família com a higienização correta da caixa d'água da sua casa. Serviço rápido, seguro e de acordo com as normas sanitárias.",
+			"column": "left",
+			"tone": "bright"
+		},
+		{
+			"id": "predial-comercial-industrial",
+			"title": "Limpeza de Caixa d'Água Predial, Comercial e Industrial",
+			"description": "Empresas, condomínios, prédios e indústrias precisam de reservatórios impecáveis. Realizamos a manutenção completa para garantir qualidade e cumprimento de exigências legais.",
+			"column": "left",
+			"tone": "dark"
+		},
+		{
+			"id": "higienizacao-desinfeccao",
+			"title": "Higienização e Desinfecção da Caixa d'Água",
+			"description": "Elimine fungos, bactérias e impurezas com nosso processo de desinfecção. Água cristalina e sem riscos para consumo.",
+			"column": "left",
+			"tone": "bright"
+		},
+		{
+			"id": "reservatorio",
+			"title": "Limpeza e Higienização de Reservatório d'Água",
+			"description": "Serviço completo para reservatórios elevados ou subterrâneos. Nossa equipe remove impurezas, desinfecta e assegura a potabilidade da água.",
+			"column": "right",
+			"tone": "dark"
+		},
+		{
+			"id": "torre",
+			"title": "Limpeza e Higienização de Torre d'Água",
+			"description": "Serviço especializado para torres d'água de condomínios, indústrias e grandes empreendimentos. Nossa equipe realiza limpeza profunda, desinfecção e manutenção preventiva (interna e externa), assegurando qualidade, segurança e conformidade com as normas da ANVISA.",
+			"column": "right",
+			"tone": "bright"
+		}
+	]
+}

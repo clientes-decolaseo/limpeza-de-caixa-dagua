@@ -1,0 +1,89 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import LocalBusinessSchema from '../components/LocalBusinessSchema.astro';
+import SEO from '../components/SEO.astro';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+	canonical: string;
+	ogImage?: string;
+	ogType?: 'website' | 'article';
+	noindex?: boolean;
+}
+
+const {
+	title,
+	description,
+	canonical,
+	ogImage,
+	ogType = 'website',
+	noindex = false,
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+// Última instância para rotas sem recorte próprio (ex.: 404). Páginas com hero passam /og-images/{slug}.jpg.
+const resolvedOgImage = ogImage ?? new URL('/og-default.jpg', site).href;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<SEO
+			title={title}
+			description={description}
+			canonical={canonical}
+			ogImage={resolvedOgImage}
+			ogType={ogType}
+			noindex={noindex}
+		/>
+		<link rel="icon" href="/favicon.ico" sizes="32x32" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<LocalBusinessSchema />
+		<slot name="head" />
+	</head>
+	<body>
+		<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+		<Header />
+		<main id="conteudo-principal">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.skip-link {
+		position: absolute;
+		left: -9999px;
+		top: 0;
+		z-index: 100;
+		padding: var(--space-2) var(--space-4);
+		background-color: var(--color-primary);
+		color: var(--color-bg);
+		font-weight: 700;
+		text-decoration: none;
+		border-radius: var(--radius);
+	}
+
+	.skip-link:focus {
+		left: var(--space-4);
+		top: var(--space-4);
+	}
+
+	:global(body) {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		margin: 0;
+	}
+
+	main {
+		flex: 1;
+		width: 100%;
+	}
+</style>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import logo from '../assets/logo.png';
+
+const HOME_DESCRIPTION =
+	"Limpeza e higienização de caixa d'água em São Paulo e região. Atendimento residencial, comercial e industrial, com certificado sanitário.";
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const regions = await getCollection('regions');
+const principal = regions.find((region) => region.id === 'sao-paulo');
+
+const citiesServed = [
+	...new Set(regions.flatMap((region) => region.data.citiesServed)),
+];
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
+	name: 'Universo Ambiental',
+	description: HOME_DESCRIPTION,
+	url: site.href,
+	telephone: principal?.data.phone,
+	priceRange: '$$',
+	image: new URL(logo.src, site).href,
+	areaServed: citiesServed.map((name) => ({
+		'@type': 'City',
+		name,
+	})),
+	// Campos a incluir quando o cliente fornecer os dados:
+	// address: { '@type': 'PostalAddress', streetAddress, addressLocality, addressRegion, postalCode, addressCountry: 'BR' }
+	// taxID: 'CNPJ'
+	// geo: { '@type': 'GeoCoordinates', latitude, longitude }
+	// aggregateRating: { '@type': 'AggregateRating', ratingValue, reviewCount }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

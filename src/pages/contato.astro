@@ -1,0 +1,90 @@
+---
+import PhoneRegions from '../components/PhoneRegions.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const canonical = new URL('/contato/', site).href;
+const title = 'Contato | Universo Ambiental';
+const description =
+	"Entre em contato com a Universo Ambiental. Atendimento em São Paulo e região para limpeza de caixa d'água, calhas, coifas e mais. Orçamento gratuito.";
+
+if ([...description].length > 160) {
+	throw new Error(`Meta description com ${[...description].length} caracteres (máximo 160).`);
+}
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+	<article class="page">
+		<header class="intro">
+			<h1>Entre em Contato</h1>
+			<p>
+				Fale com a equipe da Universo Ambiental pelo telefone ou WhatsApp da sua região. O
+				orçamento de higienização e limpeza é gratuito. Atendemos residências, condomínios e
+				empresas em São Paulo e região.
+			</p>
+		</header>
+
+		<section class="block" aria-labelledby="telefones-heading">
+			<h2 id="telefones-heading">Telefones e WhatsApp por região</h2>
+			<PhoneRegions variant="full" prominent />
+		</section>
+
+		<section class="block hours" aria-labelledby="horario-heading">
+			<h2 id="horario-heading">Horário de atendimento</h2>
+			<p>Atendimento 24 horas, todos os dias, inclusive fins de semana e feriados.</p>
+		</section>
+	</article>
+</BaseLayout>
+
+<style>
+	.page {
+		max-width: 72rem;
+		margin: 0 auto;
+		padding: var(--space-8) var(--space-4) var(--space-16);
+	}
+
+	.intro {
+		margin-bottom: var(--space-12);
+		max-width: 42rem;
+	}
+
+	h1,
+	h2 {
+		margin: 0 0 var(--space-4);
+		line-height: 1.2;
+		color: var(--color-ink);
+	}
+
+	h1 {
+		font-size: clamp(1.75rem, 4vw, 2.75rem);
+	}
+
+	h2 {
+		font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+	}
+
+	.intro p,
+	.hours p {
+		margin: 0;
+		color: var(--color-ink-soft);
+		line-height: 1.6;
+	}
+
+	.block {
+		margin-bottom: var(--space-12);
+	}
+
+	.hours {
+		max-width: 42rem;
+		padding: var(--space-6);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius-lg);
+		background-color: var(--color-bg-alt);
+	}
+
+	@media (min-width: 64rem) {
+		.page {
+			padding: var(--space-12) var(--space-8) var(--space-24);
+		}
+	}
+</style>
