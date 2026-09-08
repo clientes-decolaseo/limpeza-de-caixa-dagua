@@ -18,6 +18,86 @@ const SEARCH_QUERIES = [
 		outputName: 'caixa-dagua-condominio',
 		subdir: 'blog',
 	},
+	{
+		query: 'commercial restaurant kitchen stove',
+		outputName: 'como-dimensionar-caixa-de-gordura-para-restaurante',
+		subdir: 'blog',
+	},
+	{
+		query: 'plumber cleaning kitchen sink drain',
+		outputName: 'como-limpar-caixa-de-gordura',
+		subdir: 'blog',
+	},
+	{
+		query: 'used cooking oil bottle restaurant',
+		outputName: 'importancia-da-manutencao-da-caixa-de-gordura',
+		subdir: 'blog',
+	},
+	{
+		query: 'clogged kitchen sink overflow water',
+		outputName: 'caixa-de-gordura-entupida-o-que-fazer',
+		subdir: 'blog',
+	},
+	{
+		query: 'greasy dirty restaurant kitchen floor',
+		outputName: 'sinais-de-que-a-caixa-de-gordura-precisa-de-limpeza',
+		subdir: 'blog',
+	},
+	{
+		query: 'rooftop plastic water tank Brazil',
+		outputName: 'qual-o-prazo-ideal-para-limpar-a-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'dirty murky tap water glass',
+		outputName: 'sinais-de-que-a-caixa-dagua-precisa-de-limpeza-urgente',
+		subdir: 'blog',
+	},
+	{
+		query: 'apartment building condominium facade',
+		outputName: 'de-quem-e-a-responsabilidade-de-limpar-a-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'calculator invoice service quote',
+		outputName: 'quanto-custa-limpeza-de-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'cleaning technician working timer',
+		outputName: 'quanto-tempo-leva-para-limpar-uma-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'man cleaning large water tank',
+		outputName: 'como-limpar-caixa-dagua-passo-a-passo',
+		subdir: 'blog',
+	},
+	{
+		query: 'professional cleaning company workers team',
+		outputName: 'como-escolher-uma-empresa-especializada-em-limpeza-de-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'contaminated dirty drinking water',
+		outputName: 'consequencias-de-nao-limpar-a-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'cleaning tools bucket gloves sponge',
+		outputName: 'materiais-necessarios-para-limpeza-de-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'inspection clipboard documents regulations',
+		outputName: 'normas-e-legislacao-limpeza-caixa-dagua',
+		subdir: 'blog',
+	},
+	{
+		query: 'water reservoir technician inspection',
+		outputName: 'o-que-esperar-de-um-servico-profissional-de-higienizacao',
+		subdir: 'blog',
+	},
 ];
 
 const SELECTED_IDS = {
@@ -31,6 +111,22 @@ const SELECTED_IDS = {
 	'servico-hidrojateamento': 35153375,
 	'servico-caixa-gordura': 8629124,
 	'caixa-dagua-condominio': 29309716,
+	'como-dimensionar-caixa-de-gordura-para-restaurante': 34276646,
+	'como-limpar-caixa-de-gordura': 9462312,
+	'importancia-da-manutencao-da-caixa-de-gordura': 4252132,
+	'caixa-de-gordura-entupida-o-que-fazer': 4947388,
+	'sinais-de-que-a-caixa-de-gordura-precisa-de-limpeza': 11731658,
+	'qual-o-prazo-ideal-para-limpar-a-caixa-dagua': 30899006,
+	'sinais-de-que-a-caixa-dagua-precisa-de-limpeza-urgente': 14243651,
+	'de-quem-e-a-responsabilidade-de-limpar-a-caixa-dagua': 9403871,
+	'quanto-custa-limpeza-de-caixa-dagua': 7688524,
+	'quanto-tempo-leva-para-limpar-uma-caixa-dagua': 8113533,
+	'como-limpar-caixa-dagua-passo-a-passo': 18205265,
+	'como-escolher-uma-empresa-especializada-em-limpeza-de-caixa-dagua': 6196677,
+	'consequencias-de-nao-limpar-a-caixa-dagua': 36289959,
+	'materiais-necessarios-para-limpeza-de-caixa-dagua': 4440525,
+	'normas-e-legislacao-limpeza-caixa-dagua': 8293680,
+	'o-que-esperar-de-um-servico-profissional-de-higienizacao': 12619710,
 };
 
 const PEXELS_SEARCH_URL = 'https://api.pexels.com/v1/search';
