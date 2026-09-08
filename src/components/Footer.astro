@@ -33,11 +33,6 @@ const serviceLinks = [
 			<p class="tagline">Higienização de caixas d'água e reservatórios em São Paulo e região.</p>
 		</div>
 
-		<section class="contacts" aria-labelledby="footer-contatos">
-			<h2 id="footer-contatos">Atendimento por região</h2>
-			<PhoneRegions variant="full" />
-		</section>
-
 		<nav aria-label="Links rápidos">
 			<h2 id="footer-links">Serviços</h2>
 			<ul>
@@ -50,6 +45,11 @@ const serviceLinks = [
 				}
 			</ul>
 		</nav>
+
+		<section class="contacts" aria-labelledby="footer-contatos">
+			<h2 id="footer-contatos">Atendimento por região</h2>
+			<PhoneRegions variant="boxes" />
+		</section>
 	</div>
 
 	<p class="copyright">© {year} Universo Ambiental. Todos os direitos reservados.</p>
@@ -121,24 +121,18 @@ const serviceLinks = [
 		text-align: center;
 	}
 
-	@media (min-width: 48rem) {
-		.inner {
-			grid-template-columns: 1fr 1fr;
-		}
-
-		.brand {
-			grid-column: 1 / -1;
-		}
+	.contacts {
+		min-width: 0;
 	}
 
-	@media (min-width: 72rem) {
+	@media (min-width: 48rem) {
 		.inner {
-			grid-template-columns: 18rem 1fr 12rem;
+			grid-template-columns: 1fr 14rem;
 			align-items: start;
 		}
 
-		.brand {
-			grid-column: auto;
+		.contacts {
+			grid-column: 1 / -1;
 		}
 	}
 </style>
