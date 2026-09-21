@@ -1,13 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/hidrojateamento",
-      "destination": "/servicos/hidrojateamento",
-      "permanent": true
-    },
-    {
       "source": "/hidrojateamento/",
-      "destination": "/servicos/hidrojateamento",
+      "destination": "/servicos/hidrojateamento/",
       "permanent": true
     },
     {
@@ -86,7 +81,7 @@
       "permanent": true
     },
     {
-      "source": "/d/limpeza-de-caixa-dagua-em-pinheiros-sp",
+      "source": "/d/limpeza-de-caixa-dagua-em-pinheiros-sp/",
       "destination": "/servicos/limpeza-de-caixa-dagua/",
       "permanent": true
     },
@@ -2301,11 +2296,6 @@
       "permanent": true
     },
     {
-      "source": "/d/limpeza-de-caixa-dagua-em-pinheiros-sp/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
-      "permanent": true
-    },
-    {
       "source": "/d/limpeza-de-caixa-dagua-em-aruja/",
       "destination": "/servicos/limpeza-de-caixa-dagua/",
       "permanent": true
@@ -3171,11 +3161,6 @@
       "permanent": true
     },
     {
-      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-norte",
-      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
-      "permanent": true
-    },
-    {
       "source": "/d/limpeza-de-caixa-dagua-no-abc/",
       "destination": "/servicos/limpeza-de-caixa-dagua/",
       "permanent": true
@@ -3248,11 +3233,6 @@
     {
       "source": "/d/limpeza-de-fossa-em-osasco/",
       "destination": "/servicos/limpa-fossa/",
-      "permanent": true
-    },
-    {
-      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-sul",
-      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
       "permanent": true
     },
     {
@@ -3486,7 +3466,7 @@
       "permanent": true
     },
     {
-      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-leste",
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-leste/",
       "destination": "/servicos/limpeza-de-caixa-de-gordura/",
       "permanent": true
     },
@@ -3508,11 +3488,6 @@
     {
       "source": "/d/limpeza-de-calhas-na-zona-sul/",
       "destination": "/servicos/limpeza-de-calhas/",
-      "permanent": true
-    },
-    {
-      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-oeste",
-      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
       "permanent": true
     },
     {
