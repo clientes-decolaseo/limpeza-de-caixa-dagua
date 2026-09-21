@@ -1,0 +1,3630 @@
+{
+  "redirects": [
+    {
+      "source": "/hidrojateamento",
+      "destination": "/servicos/hidrojateamento",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento/",
+      "destination": "/servicos/hidrojateamento",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-investigacao-de-vazamentos/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-tubulacoes/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-em-osasco/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-bela-vista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-ipiranga-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-suzano/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-paulo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-industrial/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-vargem-grande-paulista/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-cajamar/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-jaragua/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-caixa-dagua-tambore/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao-de-reservatorios/",
+      "destination": "/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-pinheiros-sp",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-no-morumbi/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qual-o-valor-para-limpar-uma-caixa-dagua-de-10-000-litros-em-sao-bernardo-do-campo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/por-que-fazer-a-limpeza-de-caixa-dagua-a-cada-6-meses/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-na-barra-funda/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/alfabeto/i/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/alfabeto/h/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/alfabeto/g/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-zona-oeste-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-brooklin-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-agua-no-tucuruvi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-zona-central/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-vila-medeiros/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-na-zona-norte/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-mogi-das-cruzes/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-jandira/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-industrial/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-sorocaba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-leopoldina-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-moema/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-sao-roque/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/analise-de-potabilidade-da-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-cachoeirinha/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-porto-feliz/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/quanto-custa-para-fazer-limpeza-de-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-abc/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-embu/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/como-limpar-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-bom-retiro/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-na-granja-viana/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-vila-maria/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-sp/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-ermelino-matarazzo-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-aldeia-da-serra/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-jundiai/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-cotia/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-na-lapa/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-caraguatatuba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-sao-bernardo/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-cabreuva/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa-em-carapicuiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-na-zona-sul/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-ermelino-matarazzo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-tanque-de-oleo/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-parque-sao-domingos/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-caieiras/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-em-embu/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/como-posso-limpar-a-caixa-dagua-da-minha-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-itaim-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-porto-feliz/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-campo-limpo-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-em-carapicuiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-baeta-neves/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-na-zona-leste/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-limao/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-rudge-ramos/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/a-importancia-da-manutencao-da-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/de-quem-e-a-responsabilidade-de-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-sao-mateus-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-itupeva/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-sorocaba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-em-cotia/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/destinacao-final-de-efluentes/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-higienizacao-de-caixa-dagua-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-itapecerica/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-de-esgoto-em-sao-paulo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/exaustores-de-cozinha/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-em-diadema/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-jandira/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/coleta-e-transporte-de-residuos-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-campinas/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-cotia/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-em-cotia/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-anhanguera/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-mandaqui/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-para-condominios/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-em-barueri/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-osasco/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/limpeza-da-caixa-dagua-por-que-e-essencial-quando-fazer-e-como-garantir-agua-limpa-em-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-em-suzano/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-jardim-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-itapevi/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-santo-amaro/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-campinas/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-na-zona-sul/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/impermeabilizacao-de-caixas-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-alto-de-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-barra-funda/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-jaguare-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-na-lapa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-itu/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-suzano/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-guarulhos/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/higienizacao-de-caixa-dagua-em-alphaville/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-bela-vista/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-trocadores-de-calor/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-tucuruvi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-no-alphaville/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-rio-pequeno-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-louveira/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-pirituba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-vila-sonia-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-zona-sul-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-sao-paulo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-curitiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-caixa-dagua-anvisa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-leopoldina/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-sorocaba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-pari-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itapecerica-da-serra/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-sao-lourenco/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-osasco/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-bauru/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-em-cajamar/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-no-jardim-europa/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-comercial/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-em-jundiai/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa-em-cotia/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-vargem-grande-paulista/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/certificado-de-execucao-de-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-vila-medeiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quando-limpar-sua-caixa-dagua-guia-essencial-para-saude-e-economia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/limpeza-da-caixa-dagua-por-que-e-essencial-quando-fazer-e-como-garantir-agua-limpa-em-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/como-limpar-a-caixa-dagua-do-condominio/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qual-e-o-prazo-ideal-para-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sinais-de-que-sua-caixa-de-gordura-precisa-de-limpeza/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/portaria-cvs-no-5-2013-e-a-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/materiais-necessarios-para-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/consequencias-de-nao-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/limpa-fossa-precos-e-orcamentos-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/qual-o-valor-cobrado-para-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao-de-reservatorios/",
+      "destination": "/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-jundiai/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-aricanduva-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-rio-pequeno/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-em-cotia/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-vila-mariana-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-mooca/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-jundiai/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa-na-barra-funda/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-itapecerica-da-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/gerenciamento-e-destinacao-final-de-efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-cotia/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-agua-rosa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-jacarei/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-em-barueri/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-na-zona-norte/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-sao-bernardo/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-em-barueri/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-campo-limpo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-agua-rasa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/zona-norte-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-completa-de-caixa-de-gordura-na-barra-funda/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-itu/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-cursino-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-perus/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-ponte-rosa-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-cangaiba-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/como-posso-limpar-a-caixa-dagua-da-minha-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-taubate/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-osasco-2/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-em-osasco/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-jaragua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-vila-carrao/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-carapicuiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-tremembe-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-em-itapevi/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-pirituba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/higienizacao-de-caixa-dagua-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-fossa-em-osasco/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-suzano/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-jaragua/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-taboao-da-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-galpao-na-zona-oeste/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-ibiuna/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-jacarei/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-separadora-de-oleo/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/higienizacao-de-caixa-dagua-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-jabaquara/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-bonsucesso/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-jandira/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/sinais-de-que-sua-caixa-de-gordura-precisa-de-limpeza/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-itapecerica-da-serra/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/caminhao-limpa-fossa-em-taboao-de-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-santos/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-freguesia-do-o/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-pos-obra-em-sp/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-na-zona-oeste/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-no-paraiso/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-embu-das-artes/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calha-no-morumbi/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-sao-bernardo-do-campo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-varzea-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-em-sao-paulo/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-nova-petropolis/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-sao-lucas-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-em-cajamar/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-campinas/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-butanta-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-itaim-bibi-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-barueri/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-coifa-em-jundiai/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/desentupidora-de-caixa-de-gordura-em-suzano/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-agua-na-se/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-residencial/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-lapa/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-parque-do-carmo-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-sao-bernardo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/coleta-de-efluentes-liquidos/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-guarulhos/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-na-zona-norte/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-na-zona-leste/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-calhas-em-taboao-da-serra/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/limpa-fossa-na-casa-verde/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-diadema/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-sao-paulo-24-horas/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-esgoto/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-recife/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/empresa-de-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/transporte-de-efluentes-em-barueri/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-tambore/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-tucuruvi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/hidrojateamento-em-suzano/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-em-pinheiros-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-moema/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-tanques/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-de-gordura-na-vila-madalena/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-no-bairro-do-limao-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua-na-zona-norte-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-guilherme/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-vinhedo/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-taboao-de-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/limpa-fossa-precos-e-orcamentos-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-alphaville/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-perdizes/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-gerenciamento-de-residuos/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-limao/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-central/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-tremembe/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-aricanduva-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/materiais-necessarios-para-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-itaim-bibi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-posso-limpar-a-caixa-dagua-da-minha-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-santo-amaro/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caixa-dagua-metalica/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/a-importancia-da-manutencao-da-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-baeta-neves/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-para-condominios/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-esgoto-guia-completo/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-jaragua-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/5-passos-para-limpar-a-caixa-dagua-tutorial-simples-e-eficaz/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/page/3/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/category/blog/page/2/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/qual-o-valor-cobrado-para-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-paraiso/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-bela-vista/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-no-jardim-europa/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-perdizes/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-tremembe-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calha-em-boituva/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-encanamentos-de-forma-eficaz/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/como-posso-limpar-a-caixa-dagua-da-minha-casa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-moema/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itupeva/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-jundiai/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-barueri/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-em-cajamar/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-iguatemi-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-vargem-grande-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/qual-e-o-prazo-ideal-para-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galeria/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-na-barra-funda/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-oeste-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-maua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/laudo-de-potabilidade-da-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-em-alphaville/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-osasco/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-nova-petropolis/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-sp/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-caetano-do-sul/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-agua-rosa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/category/blog/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-aldeia-da-serra/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-sao-roque/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-cursino-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-itapecerica/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-itupeva/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-pompeia/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/caixa-de-gordura-entupida/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-santo-andre/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-sao-roque/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-barueri/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-taboao-da-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itaquera/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-central/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-santos/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-santana/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-conforme-norma-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-exclusao-de-bacterias-na-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-pinheiros/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-itapevi/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-sao-paulo/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-mariana-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-santana-de-parnaiba/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-barueri/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-vila-mariana/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-rio-pequeno/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-madalena-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-tecnica-guia-completo/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-santo-amaro-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-no-morumbi/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-caixas/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-cubatao/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/certificado-de-execucao-de-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-itapevi/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-consolacao/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-sanitario/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-braganca-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calha-no-morumbi/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-limpar-a-caixa-dagua-do-condominio/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-barueri/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-santo-andre/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-no-tambore/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/contato/",
+      "destination": "/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-sp/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-bairro-do-limao-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-cachoeirinha/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-esgoto/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-curitiba/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-no-butanta/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-jandira/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-jandira/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-freguesia-do-o-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-mooca/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-jundiai/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-osasco-2/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-jardim-tupanci-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-itaim-paulista-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-agua-rasa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-mateus-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-butanta/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-campo-limpo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-guarulhos/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-jundiai/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-perdizes-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-cotia/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-vila-carrao-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-osasco/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-em-itapevi/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itapevi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-osasco/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-casa-verde/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-vinhedo/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-vila-guilherme/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-sul-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-na-lapa/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-reservatorios-de-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-alphaville/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-na-zona-norte/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-caixas-dagua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/portaria-cvs-no-5-2013-e-a-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/hidrojateamento/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-tanques/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-jacarei/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-caraguatatuba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sorocaba/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-matilde/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/category/blog/page/3/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-santo-andre/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-barra-funda/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-indaiatuba/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-no-abc/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-avaliacao-de-reservatorios-subterraneos/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-jacarei/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-no-abc/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-casa-verde/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-sao-paulo/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-embu/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-cabreuva/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/de-quem-e-a-responsabilidade-de-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-mogi-das-cruzes/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-limpar-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-jardim-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-guarulhos/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-higienizacao-de-reservatorios-de-agua/",
+      "destination": "/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-pirituba-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-taboao-da-serra/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-cotia/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-brasilandia/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itu/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-vila-mariana/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-pinheiros-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-aruja/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-suzano/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-mooca-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-embu-das-artes/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-osasco/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-na-zona-oeste/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-cotia/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-vinhedo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-tatuape/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-sao-bernardo/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-suzano/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-trocadores-de-calor/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/coleta-de-efluentes-liquidos/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-escolher-uma-empresa-especializada-em-limpeza-de-caixas-de-agua-em-sao-paulo/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-jabaquara/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-sao-bernardo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-embu-das-artes/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-taboao-da-serra/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-aruja/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-suzano/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-limpar-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-ibiuna/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-moema-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-itaim-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-guarulhos/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-guarulhos/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-aruja/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-moema/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-pirituba/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-residuos-perigosos/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-curitiba/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-embu/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-cajamar/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-na-casa-verde/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-santana-de-parnaiba/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-diadema/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-cotia/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-cangaiba-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-guarulhos/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-na-penha-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-ipiranga-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-guarulhos/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-alto-de-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-itapevi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-butanta/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-zona-leste/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-ermelino-matarazzo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-caixa-dagua-anvisa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-na-vila-mariana/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-na-zona-leste/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-alphaville/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-testes-de-qualidade-da-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-industrial/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/como-dimensionar-caixa-de-gordura-para-restaurante/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-boituva/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-em-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-estacao-de-tratamento-de-agua-e-estacao-de-tratamento-de-esgoto/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-na-granja-viana/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-ibiuna/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-tatuape/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-taubate/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-assuncao/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/coleta-de-efluentes-liquidos-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-leste/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/sinais-de-que-sua-caixa-de-gordura-precisa-de-limpeza/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-pompeia-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/sinais-de-que-sua-caixa-dagua-precisa-de-limpeza-urgente/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-alphaville/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-aruja/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/normas-da-anvisa-para-limpeza-de-caixas-dagua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-industrial-sp/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/sinais-de-que-sua-caixa-de-gordura-precisa-de-limpeza/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-lourenco/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-de-alto-vacuo/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-butanta-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-separadora-de-posto-de-combustivel/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-campinas/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/por-que-fazer-a-limpeza-de-caixa-dagua-a-cada-6-meses/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/quanto-tempo-leva-para-limpar-uma-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-guarulhos/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-suzano/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-jandira/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-jaguare-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-tecnica-industrial/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-preco/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-tanque-oleo-e-combustivel/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-porto-feliz/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-jundiai/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-lapa/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-na-zona-norte/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-itapecerica-da-serra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-em-sp/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-no-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-bernardo-do-campo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-na-zona-norte/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-jandira/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-freguesia-do-o/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-inspecao-de-reservatorios/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/esgotamento-de-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-cotia/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-jundiai/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-boituva/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-negra/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-campinas/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-imirim-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-porto-feliz/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-louveira/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-sorocaba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-aracariguama/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-morumbi-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-ermelino-matarazzo-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-liquidos-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-reatores/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-septica/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galeria-de-esgoto/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-cumbica/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-sao-paulo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-na-vila-medeiros/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-na-praia-grande/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-roque/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-em-curitiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-diadema/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-jaragua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/qual-o-valor-para-limpar-uma-caixa-dagua-de-10-000-litros-em-sao-bernardo-do-campo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-rudge-ramos/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-boituva/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-fossa-septica-guia-completo-e-pratico/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-sorocaba/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/destinacao-final-de-efluentes/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-separadora-de-oleo/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-perus/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-barra-funda-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-sao-jose-dos-campos/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/caminhao-limpa-fossa-em-cajamar/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-santo-amaro/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-tanque-oleo-e-combustivel/limpeza-caixa-separadora-oleo-agua-csao-porto-alegre-rs-1/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-sp/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-atibaia/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-atibaia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-sonia-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-de-caixas-dagua-subterraneas/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-jundiai/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/analise-de-potabilidade-da-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/impermeabilizacao-de-caixas-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-recife/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-cajamar/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-comercial/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-barra-funda/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-rio-claro/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-aracariguama/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/gerenciamento-e-destinacao-final-de-efluentes-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-norte",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-abc/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/coleta-e-transporte-de-residuos-industriais/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-fossa/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-itu/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-em-jundiai/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/page/2/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-varzea-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-barueri/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/quando-limpar-sua-caixa-dagua-guia-essencial-para-saude-e-economia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-cubatao-2/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/higienizacao-de-caixa-dagua-cajamar/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-fossa-em-osasco/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-sul",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/qual-e-o-prazo-ideal-para-limpar-a-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-oeste/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-vila-olimpia/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-vila-maria/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-na-vila-maria/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-jacana/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-vila-medeiros/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-vila-guilherme/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-santana/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-tucuruvi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-tremembe/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-no-mandaqui/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-freguesia-do-o/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-agua-em-cotia/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-coifa-na-zona-oeste/",
+      "destination": "/servicos/limpeza-de-coifa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-pirapora/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-medeiros/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-cotia/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/empresa-de-higienizacao-de-caixa-dagua-em-pinheiros/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-guilherme-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-mooca/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-sao-roque/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-vila-nova-conceicao/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-guaruja/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/manutencoes-preventivas-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-jundiai/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-no-guarulhos/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-bauru/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-mooca/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/empresa-de-higienizacao-de-caixa-dagua-em-sao-paulo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-zona-oeste/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-lavagem-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-orto-florestal/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-em-ibiuna/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-em-embu/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-em-campo-limpo-paulista/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-campo-limpo-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-cajamar/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-de-esgoto-em-sao-paulo/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-em-itu/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/limpeza-de-fossa-em-carapicuiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/desentupidora-de-caixa-de-gordura-em-carapicuiba/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/limpeza-de-caixa-dagua-residencial/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/limpa-fossa-em-carapicuiba/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-leste",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-em-caieiras/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-tambore/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-galpao-em-cajamar/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-calhas-na-zona-sul/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-de-gordura-na-zona-oeste",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-limpeza-em-locais-confinados/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-em-itapecerica/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-campo-belo-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/transporte-de-efluentes-em-jandira/",
+      "destination": "/hidrojateamento/industrial/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-campinas/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-eliminacao-de-impurezas-na-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-medeiros-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-casa-verde-sp/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/banner-limpeza-caixa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/glossario/como-fazer-higienizacao-de-sistemas-de-agua/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-barueri/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    },
+    {
+      "source": "/d/blog/dicas-importantes-para-manter-sua-caixa-dagua-limpa/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-caixa-dagua-sao-bernardo-do-campo/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/carapicuiba-sp/limpeza-de-calhas-em-carapicuiba/",
+      "destination": "/servicos/limpeza-de-calhas/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-pos-obra-em-embu-das-artes/",
+      "destination": "/servicos/",
+      "permanent": true
+    },
+    {
+      "source": "/d/desentupidora-de-caixa-de-gordura-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "permanent": true
+    },
+    {
+      "source": "/d/orcamento-de-limpeza-de-caixa-dagua/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-no-morumbi/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpa-fossa-precos-e-orcamentos-em-barueri/",
+      "destination": "/servicos/limpa-fossa/",
+      "permanent": true
+    },
+    {
+      "source": "/d/o-que-esperar-de-um-servico-profissional-de-higienizacao-de-reservatorios/",
+      "destination": "/blog/o-que-esperar-de-um-servico-profissional-de-higienizacao/",
+      "permanent": true
+    },
+    {
+      "source": "/d/limpeza-de-caixa-dagua-na-vila-jaguara/",
+      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "permanent": true
+    },
+    {
+      "source": "/d/hidrojateamento-em-cubatao/",
+      "destination": "/servicos/hidrojateamento/",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": true
+}

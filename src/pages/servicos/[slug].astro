@@ -22,7 +22,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
-const canonical = new URL(`/servicos/${entry.data.slug}`, site).href;
+const canonical = new URL(`/servicos/${entry.data.slug}/`, site).href;
 const pageTitle = `${entry.data.title} em São Paulo | Universo Ambiental`;
 const hero = entry.data.heroImage;
 

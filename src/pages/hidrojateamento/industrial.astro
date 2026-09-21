@@ -12,7 +12,7 @@ if (!entry) {
 
 const { Content } = await render(entry);
 const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
-const canonical = new URL('/hidrojateamento/industrial', site).href;
+const canonical = new URL('/hidrojateamento/industrial/', site).href;
 const hidrojateamentoUrl = new URL('/servicos/hidrojateamento', site).href;
 const hero = entry.data.heroImage;
 

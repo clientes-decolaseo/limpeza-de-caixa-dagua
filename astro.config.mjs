@@ -8,10 +8,8 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	output: 'static',
 	site: 'https://limpezadecaixasdagua.eco.br',
+	trailingSlash: 'always',
 	integrations: [sitemap(), mdx()],
-	redirects: {
-		'/hidrojateamento': '/servicos/hidrojateamento',
-	},
 	vite: {
 		plugins: [tailwindcss()],
 	},

@@ -32,10 +32,6 @@ function isCurrentPage(href: string) {
 		return path === '/servicos';
 	}
 
-	if (normalizedHref === '/servicos/hidrojateamento') {
-		return path === normalizedHref || path === '/hidrojateamento';
-	}
-
 	return path === normalizedHref || path.startsWith(`${normalizedHref}/`);
 }
 
@@ -43,7 +39,7 @@ const pathNormalized = currentPath.replace(/\/$/, '') || '/';
 const isServicesSection =
 	pathNormalized === '/servicos' ||
 	pathNormalized.startsWith('/servicos/') ||
-	pathNormalized.startsWith('/hidrojateamento');
+	pathNormalized.startsWith('/hidrojateamento/');
 ---
 
 <header>
