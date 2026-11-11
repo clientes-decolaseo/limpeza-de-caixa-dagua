@@ -30,6 +30,9 @@ if ([...entry.data.metaDescription].length > 160) {
 	throw new Error(`Meta description de ${entry.data.slug} com ${[...entry.data.metaDescription].length} caracteres.`);
 }
 
+const regions = await getCollection('regions');
+const showServiceAreas = entry.data.slug === 'limpeza-de-caixa-dagua';
+
 const faqs = (await getCollection('faqs')).filter((faq) =>
 	faq.data.appliesTo.includes(entry.data.slug),
 );
@@ -46,7 +49,12 @@ const serviceSchema = {
 		name: 'Universo Ambiental',
 		url: site.href,
 	},
-	areaServed: 'São Paulo',
+	areaServed: showServiceAreas
+		? [...new Set(regions.flatMap((region) => region.data.citiesServed))].map((name) => ({
+				'@type': 'City',
+				name,
+			}))
+		: 'São Paulo',
 	serviceType: entry.data.title,
 };
 
@@ -137,6 +145,21 @@ const ogImage = new URL(`/og-images/${entry.id.replace(/\.mdx$/i, '')}.jpg`, sit
 
 		<div class="content">
 			<Content />
+			{
+				showServiceAreas && (
+					<section aria-labelledby="regioes-heading">
+						<h2 id="regioes-heading">Regiões Atendidas</h2>
+						<ul>
+							{regions.map((region) => (
+								<li>
+									<strong>{region.data.name}:</strong> {region.data.citiesServed.join(', ')}.
+								</li>
+							))}
+						</ul>
+						<p>Os telefones e WhatsApp de cada região estão no fim desta página.</p>
+					</section>
+				)
+			}
 		</div>
 
 		<div class="faq-wrap">
