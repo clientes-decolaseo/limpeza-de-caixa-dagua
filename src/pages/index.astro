@@ -11,7 +11,7 @@ import imageSeguranca from '../assets/images/home/servico-seguranca-nr.jpg';
 import tiposCaixa from '../content/home/caixa-dagua-tipos.json';
 
 const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
-const title = "Limpeza de Caixa d'Água em São Paulo | Universo Ambiental";
+const title = "Limpeza e Higienização de Caixas d'Água | Universo Ambiental";
 const description =
 	"Limpeza e higienização de caixa d'água em São Paulo e região. Residencial, comercial e industrial, com certificado sanitário. Orçamento grátis.";
 
@@ -143,7 +143,7 @@ const tiposDireita = tiposCaixa.items.filter((item) => item.column === 'right');
 								alt={service.data.heroImageAlt}
 								title={service.data.title}
 								description={service.data.shortDescription}
-								href={`/servicos/${service.data.slug}`}
+								href={`/servicos/${service.data.slug}/`}
 								headingLevel="h3"
 							/>
 						</li>

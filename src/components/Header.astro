@@ -6,18 +6,18 @@ import PhoneRegions from './PhoneRegions.astro';
 const currentPath = Astro.url.pathname;
 
 const serviceItems = [
-	{ href: '/servicos/limpeza-de-caixa-dagua', label: "Limpeza de Caixa D'Água" },
-	{ href: '/servicos/limpeza-de-calhas', label: 'Limpeza de Calhas' },
-	{ href: '/servicos/limpeza-de-coifa', label: 'Limpeza de Coifa' },
-	{ href: '/servicos/limpa-fossa', label: 'Limpa Fossa' },
-	{ href: '/servicos/hidrojateamento', label: 'Hidrojateamento' },
-	{ href: '/hidrojateamento/industrial', label: 'Hidrojateamento Industrial' },
-	{ href: '/servicos/limpeza-de-caixa-de-gordura', label: 'Limpeza de Caixa de Gordura' },
+	{ href: '/servicos/limpeza-de-caixa-dagua/', label: "Limpeza de Caixa D'Água" },
+	{ href: '/servicos/limpeza-de-calhas/', label: 'Limpeza de Calhas' },
+	{ href: '/servicos/limpeza-de-coifa/', label: 'Limpeza de Coifa' },
+	{ href: '/servicos/limpa-fossa/', label: 'Limpa Fossa' },
+	{ href: '/servicos/hidrojateamento/', label: 'Hidrojateamento' },
+	{ href: '/hidrojateamento/industrial/', label: 'Hidrojateamento Industrial' },
+	{ href: '/servicos/limpeza-de-caixa-de-gordura/', label: 'Limpeza de Caixa de Gordura' },
 ] as const;
 
 const navItems = [
-	{ href: '/blog', label: 'Blog' },
-	{ href: '/contato', label: 'Contato' },
+	{ href: '/blog/', label: 'Blog' },
+	{ href: '/contato/', label: 'Contato' },
 ] as const;
 
 function isCurrentPage(href: string) {
@@ -70,7 +70,7 @@ const isServicesSection =
 					</li>
 					<li class="has-submenu">
 						<a
-							href="/servicos"
+							href="/servicos/"
 							aria-current={isCurrentPage('/servicos') ? 'page' : undefined}
 							class:list={['parent-link', isServicesSection && 'is-section']}
 						>
@@ -103,7 +103,7 @@ const isServicesSection =
 							<ul class="submenu">
 								<li>
 									<a
-										href="/servicos"
+										href="/servicos/"
 										aria-current={isCurrentPage('/servicos') ? 'page' : undefined}
 									>
 										Todos os serviços
