@@ -82,5 +82,29 @@
     "question": "Posso limpar a caixa de gordura sozinho?",
     "answer": "Não é recomendado. Além do risco sanitário no manuseio dos resíduos, o descarte de gordura e lodo precisa seguir destinação adequada. O serviço especializado faz a sucção, o transporte e o encaminhamento correto do material.",
     "appliesTo": ["limpeza-de-caixa-de-gordura"]
+  },
+  {
+    "id": "condominio-o-que-exigir",
+    "question": "O que exigir da empresa na limpeza de caixa d'água de condomínio?",
+    "answer": "Confira se a empresa emite certificado de higienização, usa desinfetante próprio para água potável e trabalha com procedimento de espaço confinado. Combine também o horário de corte da água, quantos reservatórios entram no contrato e se o valor cobre acesso difícil.",
+    "appliesTo": [
+      "limpeza-de-caixa-dagua"
+    ]
+  },
+  {
+    "id": "sinais-limpeza-urgente",
+    "question": "Como saber se a caixa d'água precisa de limpeza urgente?",
+    "answer": "Cheiro ou sabor estranho, partículas na água, vazão baixa e prazo de seis meses vencido são sinais de que a limpeza não deve esperar. Se ninguém sabe a data da última higienização, o mais seguro é agendar.",
+    "appliesTo": [
+      "limpeza-de-caixa-dagua"
+    ]
+  },
+  {
+    "id": "regioes-atendidas",
+    "question": "Em quais regiões vocês atendem?",
+    "answer": "Atendemos São Paulo e região, Vale do Paraíba e Litoral, Campinas, Jundiaí, Sorocaba e Santos. Cada região tem telefone e WhatsApp próprios, listados nesta página.",
+    "appliesTo": [
+      "limpeza-de-caixa-dagua"
+    ]
   }
 ]
