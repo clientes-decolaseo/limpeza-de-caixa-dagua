@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
       "source": "/hidrojateamento/",
       "destination": "/servicos/hidrojateamento/",
       "permanent": true
