@@ -97,12 +97,12 @@
     },
     {
       "source": "/blog/qual-o-valor-para-limpar-uma-caixa-dagua-de-10-000-litros-em-sao-bernardo-do-campo/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/quanto-custa-limpeza-de-caixa-dagua/",
       "permanent": true
     },
     {
       "source": "/blog/por-que-fazer-a-limpeza-de-caixa-dagua-a-cada-6-meses/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/qual-o-prazo-ideal-para-limpar-a-caixa-dagua/",
       "permanent": true
     },
     {
@@ -427,17 +427,12 @@
     },
     {
       "source": "/blog/a-importancia-da-manutencao-da-caixa-de-gordura/",
-      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "destination": "/blog/importancia-da-manutencao-da-caixa-de-gordura/",
       "permanent": true
     },
     {
       "source": "/desentupidora-de-caixa-de-gordura-em-pinheiros/",
       "destination": "/servicos/limpeza-de-caixa-de-gordura/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/de-quem-e-a-responsabilidade-de-limpar-a-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
       "permanent": true
     },
     {
@@ -822,7 +817,7 @@
     },
     {
       "source": "/blog/quando-limpar-sua-caixa-dagua-guia-essencial-para-saude-e-economia/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/qual-o-prazo-ideal-para-limpar-a-caixa-dagua/",
       "permanent": true
     },
     {
@@ -831,33 +826,18 @@
       "permanent": true
     },
     {
-      "source": "/blog/como-limpar-a-caixa-dagua-do-condominio/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
-      "permanent": true
-    },
-    {
       "source": "/blog/qual-e-o-prazo-ideal-para-limpar-a-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/qual-o-prazo-ideal-para-limpar-a-caixa-dagua/",
       "permanent": true
     },
     {
       "source": "/blog/sinais-de-que-sua-caixa-de-gordura-precisa-de-limpeza/",
-      "destination": "/servicos/limpeza-de-caixa-de-gordura/",
+      "destination": "/blog/sinais-de-que-a-caixa-de-gordura-precisa-de-limpeza/",
       "permanent": true
     },
     {
       "source": "/blog/portaria-cvs-no-5-2013-e-a-limpeza-de-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/materiais-necessarios-para-limpeza-de-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/consequencias-de-nao-limpar-a-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/normas-e-legislacao-limpeza-caixa-dagua/",
       "permanent": true
     },
     {
@@ -867,7 +847,7 @@
     },
     {
       "source": "/blog/qual-o-valor-cobrado-para-limpeza-de-caixa-dagua/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/quanto-custa-limpeza-de-caixa-dagua/",
       "permanent": true
     },
     {
@@ -1022,7 +1002,7 @@
     },
     {
       "source": "/blog/como-posso-limpar-a-caixa-dagua-da-minha-casa/",
-      "destination": "/servicos/limpeza-de-caixa-dagua/",
+      "destination": "/blog/como-limpar-caixa-dagua-passo-a-passo/",
       "permanent": true
     },
     {
