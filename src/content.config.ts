@@ -73,4 +73,19 @@ const faqs = defineCollection({
 	}),
 });
 
-export const collections = { services, industrial, blog, regions, faqs };
+// Landings locais (serviço + cidade). Nascem com publish: false (noindex, fora do sitemap).
+// Só passam a true depois que o cliente confirma os dados marcados com [CONFIRMAR].
+const locais = defineCollection({
+	loader: glob({ pattern: '**/*.mdx', base: './src/content/locais' }),
+	schema: z.object({
+		title: z.string(),
+		service: z.string(),
+		city: z.string(),
+		regionId: z.string(),
+		metaDescription: z.string().max(160),
+		shortDescription: z.string(),
+		publish: z.boolean().default(false),
+	}),
+});
+
+export const collections = { services, industrial, blog, regions, faqs, locais };

@@ -1,0 +1,153 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, getEntry, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+	const locais = await getCollection('locais');
+
+	return locais.map((entry) => ({
+		params: { local: entry.id },
+		props: { entry },
+	}));
+}
+
+interface Props {
+	entry: CollectionEntry<'locais'>;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
+const canonical = new URL(`/${entry.id}/`, site).href;
+
+const service = await getEntry('services', entry.data.service);
+const region = await getEntry('regions', entry.data.regionId);
+if (!service) throw new Error(`Serviço "${entry.data.service}" não existe (${entry.id}).`);
+if (!region) throw new Error(`Região "${entry.data.regionId}" não existe (${entry.id}).`);
+if (!region.data.citiesServed.includes(entry.data.city)) {
+	throw new Error(`${entry.data.city} não consta em citiesServed da região ${region.id}.`);
+}
+
+const baseTitle = `${entry.data.title} | Universo Ambiental`;
+const pageTitle = [...baseTitle].length <= 60 ? baseTitle : entry.data.title;
+const hero = service.data.heroImage;
+const noindex = !entry.data.publish;
+const whatsappUrl = `https://wa.me/${region.data.whatsapp.replace(/\D/g, '')}`;
+
+const serviceSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: entry.data.title,
+	description: entry.data.metaDescription,
+	url: canonical,
+	serviceType: service.data.title,
+	areaServed: { '@type': 'City', name: entry.data.city },
+	provider: {
+		'@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
+		name: 'Universo Ambiental',
+		url: site.href,
+		telephone: region.data.phone,
+	},
+};
+
+const breadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', site).href },
+		{ '@type': 'ListItem', position: 2, name: service.data.title, item: new URL(`/servicos/${service.data.slug}/`, site).href },
+		{ '@type': 'ListItem', position: 3, name: entry.data.title, item: canonical },
+	],
+};
+---
+
+<BaseLayout
+	title={pageTitle}
+	description={entry.data.metaDescription}
+	canonical={canonical}
+	noindex={noindex}
+>
+	<Fragment slot="head">
+		<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+	</Fragment>
+
+	<article>
+		<nav class="breadcrumb" aria-label="Trilha de navegação">
+			<ol>
+				<li><a href="/">Home</a></li>
+				<li><a href={`/servicos/${service.data.slug}/`}>{service.data.title}</a></li>
+				<li aria-current="page">{entry.data.city}</li>
+			</ol>
+		</nav>
+
+		<header class="hero">
+			<div class="hero-copy">
+				<h1>{entry.data.title}</h1>
+				<p>{entry.data.shortDescription}</p>
+			</div>
+			<div class="hero-media">
+				<Image
+					src={hero}
+					alt={service.data.heroImageAlt}
+					width={1200}
+					height={Math.round((1200 / hero.width) * hero.height)}
+					format="webp"
+					quality="mid"
+					loading="eager"
+					fetchpriority="high"
+					sizes="(min-width: 64rem) 50vw, 100vw"
+				/>
+			</div>
+		</header>
+
+		<div class="content">
+			<Content />
+		</div>
+
+		<section class="cta" aria-labelledby="cta-heading">
+			<h2 id="cta-heading">Orçamento grátis em {entry.data.city}</h2>
+			<p>{region.data.name}</p>
+			<p class="cta-links">
+				<a class="btn" href={`tel:${region.data.phone}`}>Ligar: {region.data.phoneDisplay}</a>
+				<a class="btn btn-outline" href={whatsappUrl} rel="noopener">WhatsApp: {region.data.whatsappDisplay}</a>
+			</p>
+		</section>
+	</article>
+</BaseLayout>
+
+<style>
+	article { padding-bottom: var(--space-16); }
+	.breadcrumb { max-width: 72rem; margin: 0 auto; padding: var(--space-4); }
+	.breadcrumb ol { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; padding: 0; list-style: none; color: var(--color-ink-soft); font-size: 0.9rem; }
+	.breadcrumb li:not(:last-child)::after { content: '>'; margin-left: var(--space-2); color: var(--color-border); }
+	.breadcrumb a { color: var(--color-primary-dark); text-decoration: none; }
+	.breadcrumb a:hover { text-decoration: underline; }
+	.breadcrumb [aria-current='page'] { color: var(--color-ink); font-weight: 600; }
+	.hero { display: grid; gap: var(--space-8); padding: var(--space-8) var(--space-4) var(--space-12); background-color: var(--color-primary-light); }
+	.hero-copy, .hero-media { max-width: 72rem; width: 100%; margin-inline: auto; }
+	h1, h2 { margin: 0 0 var(--space-4); line-height: 1.2; color: var(--color-ink); }
+	h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+	.hero-copy p, .cta p { margin: 0 0 var(--space-4); max-width: 42rem; color: var(--color-ink-soft); line-height: 1.6; }
+	.hero-media :global(img) { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); object-fit: cover; }
+	.content, .cta { max-width: 48rem; margin: 0 auto; padding: var(--space-12) var(--space-4) 0; }
+	.content :global(h2) { margin: var(--space-8) 0 var(--space-4); font-family: var(--font-heading); font-size: clamp(1.35rem, 2.5vw, 1.75rem); line-height: 1.3; color: var(--color-ink); }
+	.content :global(h2:first-child) { margin-top: 0; }
+	.content :global(p), .content :global(li) { color: var(--color-ink-soft); line-height: 1.7; }
+	.content :global(p) { margin: 0 0 var(--space-4); }
+	.content :global(ul) { margin: 0 0 var(--space-4); padding-left: 1.25rem; }
+	.content :global(li + li) { margin-top: var(--space-2); }
+	.content :global(a) { color: var(--color-primary-dark); font-weight: 600; }
+	.cta-links { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+	.btn { display: inline-block; padding: var(--space-3) var(--space-6); border-radius: var(--radius-lg); background-color: var(--color-primary-dark); color: #fff; font-weight: 700; text-decoration: none; border: 2px solid var(--color-primary-dark); }
+	.btn-outline { background: transparent; color: var(--color-primary-dark); }
+	@media (min-width: 64rem) {
+		.hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-12); padding: var(--space-12) var(--space-8) var(--space-16); align-items: center; }
+		.hero-copy, .hero-media { max-width: none; margin: 0; }
+		.hero-copy { padding-left: max(0px, calc((100vw - 72rem) / 2)); }
+		.hero-media { padding-right: max(0px, calc((100vw - 72rem) / 2)); }
+		.content { padding-top: var(--space-16); }
+	}
+</style>
