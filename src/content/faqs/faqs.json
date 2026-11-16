@@ -106,5 +106,11 @@
     "appliesTo": [
       "limpeza-de-caixa-dagua"
     ]
+  },
+  {
+    "id": "limpeza-lavagem-higienizacao",
+    "question": "Limpeza, lavagem e higienização de caixa d'água são a mesma coisa?",
+    "answer": "No dia a dia, os três termos são usados como sinônimos. No nosso serviço, o trabalho inclui esvaziamento, remoção de sedimentos, lavagem das paredes internas, desinfecção com produto próprio para água potável e enxágue.",
+    "appliesTo": ["limpeza-de-caixa-dagua"]
   }
 ]
