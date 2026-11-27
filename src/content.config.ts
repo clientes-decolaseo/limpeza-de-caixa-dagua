@@ -40,6 +40,8 @@ const blog = defineCollection({
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
+			/** Título da tag <title>, sem sufixo da marca. Opcional: sem valor, usa `title`. */
+			seoTitle: z.string().max(60).optional(),
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			excerpt: z.string(),

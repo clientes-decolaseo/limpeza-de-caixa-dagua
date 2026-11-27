@@ -25,7 +25,10 @@ const { Content } = await render(entry);
 const site = Astro.site ?? new URL('https://limpezadecaixasdagua.eco.br');
 const slug = toBlogSlug(entry.id);
 const canonical = new URL(`/blog/${slug}/`, site).href;
-const pageTitle = `${entry.data.title} | Universo Ambiental`;
+// Marca no fim só quando o título completo cabe em ~60 caracteres (corte da SERP).
+const baseTitle = entry.data.seoTitle ?? entry.data.title;
+const brandedTitle = `${baseTitle} | Universo Ambiental`;
+const pageTitle = [...brandedTitle].length <= 60 ? brandedTitle : baseTitle;
 const hero = entry.data.heroImage;
 const published = entry.data.pubDate;
 const modified = entry.data.updatedDate ?? published;
